@@ -1,0 +1,14 @@
+/*Users*/
+CREATE TABLE `as8`.`shop_user` ( 
+    `user_id` INT NOT NULL AUTO_INCREMENT , 
+    `name` VARCHAR(512) NOT NULL , 
+    `email` VARCHAR(512) NOT NULL UNIQUE, 
+    `city` VARCHAR(512) NOT NULL , 
+    `password` VARCHAR(512) NOT NULL , 
+    PRIMARY KEY (`user_id`)
+) ENGINE = InnoDB;
+
+
+
+
+CREATE TABLE `as8`.`shop` ( `id` INT NOT NULL AUTO_INCREMENT , `name` VARCHAR(512) NOT NULL , `price` INT NOT NULL , `img` BLOB NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
